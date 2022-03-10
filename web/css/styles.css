@@ -1,0 +1,32 @@
+:root,
+:root.light {
+  --bg-color: #fff;
+  --text-color: #123;
+}
+ 
+:root.dark {
+  --bg-color: #121212;
+  --text-color: #45ADFE;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.theme-btn {
+    width: 3em;
+    height: 3em;
+    padding: 0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    color: var(--text-color);
+    background-color: transparent;
+}
+header{
+
+}

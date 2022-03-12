@@ -1,39 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/web/css/styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="shortcut icon" href="/web/img/Recurso 6.png" type="image/x-icon">
-    
-    <title>Coffee Css</title>
-</head>
-<body>
-    <!--HEADER-->
-    <header>
-        <!--NAVBAR-->
-        <nav>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </nav>
-
-        <button class="theme-btn light" onclick="setTheme('light')" title="Light mode">Light mode</button>
-        <button class="theme-btn light" onclick="setTheme('dark')" title="Dark mode">Dark mode</button>
-    </header>
-    <!--MAIN-->
-    <main>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/web/img/Recurso 9.png" type="image/x-icon">
+        <link rel="stylesheet" href="/web/css/styles.css" />
+        <title>Coffee CSS</title>
+    </head>
+    <body class="body">
         
-    </main>
-    <!--FOOTER-->
-    <footer>
+        <!--HEADER-->
+        <header class="topheader">
+            <!--NAVBAR-->
+            <nav class="topnav">
+                <a href="#" class="logo">
+                <img
+                    src="/web/img/Recurso 8.png"
+                    alt="programador"
+                />
+                <div class="logotype">
+                    Coffee CSS
+                </div>
+                </a>
 
-    </footer>
+                <button class="open-menu" aria-label="Abrir menú">
+                    <img src="/web/img/hamburger-icon.svg" alt="abrir menú" />
+                </button>
 
-    <script src="/web/js/scripts.js"></script>
-    <script src="/web/js/animations.js"></script>
-</body>
+                <ul class="menu">
+                    <button class="close-menu" aria-label="Cerrar menú">
+                        <img src="/web/img/close-icon.svg" alt="cerrar menú" style="margin-top: 12px; margin-right: -8px;"/>
+                    </button>
+                    <li><a href="#profile" class="links">Home</a></li>
+                    <li><a href="#experience" class="links">Objetivos</a></li>
+                    <li><a href="#footer" class="links">Framework</a></li>
+                    <li><a href="/web/doc.html" class="links">Documentacion</a></li>
+                    <li><button class="descarga">Descargar</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--MAIN-->
+        <section class="principal">
+            <h1 class="titulo">Simple, Elegante y Delicioso</h1>
+            <p class="subt">Coffee CSS es un framework que ayudará a que la codificación de páginas relacionadas con la industria cafetera tengan 
+                una mejor calidad de diseño.</p>
+        </section>
+
+        <section class="fondo"></section>
+
+        <footer id="footer">
+            <button class="theme-btn light" onclick="setTheme('light')" title="Light mode">Light mode</button>
+            <button class="theme-btn light " onclick="setTheme('dark')" title="Dark mode">Dark mode</button>
+        </footer>
+
+        <script src="/web/js/scripts.js"></script>
+        <script src="/web/js/animations.js"></script>
+    </body>
 </html>

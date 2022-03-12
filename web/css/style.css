@@ -1,0 +1,69 @@
+:root,
+:root.light {
+  --bg-color: #fff;
+  --text-color: #123;
+  --primary:#e8c39e;
+  --secundary:#9e6730;
+  --terciary:#f3dbc3;
+  --accentcolor:#804000;
+  --colort:#fff;
+
+
+  --theme-color: white;
+  --primary-color: #124f88;
+  --secundary-color: #F7C331;
+  --text-color-inverse: white;
+  --text-color: black;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #3A4460;
+}
+ 
+:root.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --primary:#9e6730;
+  --secundary:#804000;
+  --terciary:#eaccad;
+  --accentcolor:#f3dbce;
+  --colort:#fff;
+
+
+  --theme-color: white;
+  --primary-color: #124f88;
+  --secundary-color: #F7C331;
+  --text-color-inverse: white;
+  --text-color: black;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #3A4460;
+}
+
+.bodyDoc {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: var(--text-color);
+    width: 100vw;
+}
+
+.topheaderDoc {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.logo{
+    color: var(--text-color);
+}
+
+.descargaDoc{
+    color: var(--text-color);
+    background-color: var(--primary);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    border: none;
+    border-radius: 30px;
+    padding: 0 20px;
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+}

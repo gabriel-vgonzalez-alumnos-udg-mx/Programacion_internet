@@ -43,8 +43,8 @@
   --theme-color: white;
   --primary-color: #124f88;
   --secundary-color: #F7C331;
-  --text-color-inverse: white;
-  --text-color: black;
+  --text-color-inverse: black;
+  --text-color: white;
   --navbar-shallow-color: #e5e5e5;
   --menu-mobile-background-color: #3A4460;
 }
@@ -126,8 +126,7 @@ a {
   position: relative;
 }
 .menu button {
-  color: var(--text-color);
-  
+  color: black;
   font-size: 18px;
   font-weight: 500;
   line-height: 50px;
@@ -212,6 +211,52 @@ footer{
   display: block;
 }
 
+.theme-btn{
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 1pt;
+}
+
+.des{
+  display: block;
+  background: var(--accentcolor);
+  color: var(--text-color-inverse);
+  padding: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  width: auto;
+  max-width: 200px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.download {
+display: flex;
+flex-wrap: wrap;
+padding: 60px;
+padding-top: 124px;
+justify-content: space-between;
+}
+.downloadC{
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+.samples{
+  width: 43%;
+  color: black;
+  background-color: rgb(226, 226, 226);
+  padding: 20px;
+  border-radius: 20px;
+}
+.zonaD{
+  background-color: var(--bg-color);
+  width: 100%;
+  height: auto;
+}
+
 
 @media (min-width: 481px) and (max-width: 768px) {
   .topheader{
@@ -235,7 +280,7 @@ footer{
   }
 
   .titulo{
-    margin-top: 200px;
+    margin-top: 250px;
     font-size: 4em;
   }
 
@@ -282,6 +327,13 @@ footer{
   .footerL{
     width: 100%;
   }
+  .downloadC{
+    width: 100%;
+  }
+  .samples{
+    width: 100%;
+
+  }
 }
 @media (max-width: 480px) {
   .topheader{
@@ -304,6 +356,7 @@ footer{
   }
   
   .titulo{
+    margin-top: 200px;
     font-size: 2.9em;
   }
 
@@ -350,4 +403,35 @@ footer{
   .footerL{
     width: 100%;
   }
+  .downloadC{
+    width: 100%;
+  }
+  .samples{
+    width: 100%;
+  }
 }
+
+
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--accentcolor); /* Set a background color */
+  color: var(--text-color-inverse); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 48px;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+

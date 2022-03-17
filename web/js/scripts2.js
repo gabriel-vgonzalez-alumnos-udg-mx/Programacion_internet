@@ -1,17 +1,6 @@
-//Menu responsive telefono y tablet
-const menu = document.querySelector(".menu");
-const openMenuBtn = document.querySelector(".open-menu");
-const closeMenuBtn = document.querySelector(".close-menu");
-
-function toggleMenu() {
-  menu.classList.toggle("menu_opened");
-}
-
-openMenuBtn.addEventListener("click", toggleMenu);
-closeMenuBtn.addEventListener("click", toggleMenu);
-
 //Cambiar tema entre oscuro y claro
 const setTheme = theme => document.documentElement.className = theme;
+const setTheme2 = theme => document.documentElement.className = theme;
 
 //Get the button:
 mybutton = document.getElementById("myBtn");

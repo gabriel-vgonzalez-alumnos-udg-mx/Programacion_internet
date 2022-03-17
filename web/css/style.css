@@ -49,6 +49,8 @@
     left: 0;
     top: 0;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(.3em);
 }
 
 .logo{
@@ -67,3 +69,21 @@
     position: relative;
     font-family: 'Poppins',sans-serif;
 }
+main{
+  display: flex;
+  margin-top: 80px;
+}
+.aside{
+  width: 25%;
+  height: 500px;
+  background-color: #121212;
+}
+.article{
+  width: 75%;
+  height: auto;
+  background-color: #dbdbdb;
+}
+
+
+
+

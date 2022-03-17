@@ -67,6 +67,7 @@ a {
   top: 0;
   width: 100%;
   background-color: var(--bg-color);
+  --webkit-backdrop-filter: blur(0.3em);
 }
 .topnav {
   display: flex;
@@ -99,7 +100,7 @@ a {
   font-size: 1.6em;
   margin-left: 20px;
   }
-  
+
   .descargaDoc{
     color: var(--text-color);
     background-color: var(--primary);
@@ -160,6 +161,10 @@ footer{
   text-align: center;
   border-radius: 30px;
   font-size: 20px;
+}
+.descargaDoc:hover {
+  color:white;
+  background-color: rgb(78, 92, 107); /* Add a dark-grey background on hover */
 }
 
 #myBtn {

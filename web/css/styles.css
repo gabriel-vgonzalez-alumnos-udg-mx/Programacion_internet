@@ -46,6 +46,7 @@
 
 html{
   scroll-behavior: smooth;
+  --scroll-behavior: smooth;
 }
 
 /*Body*/
@@ -69,6 +70,7 @@ a {
   top: 0;
   width: 100%;
   backdrop-filter: blur(0.3em);
+  --webkit-backdrop-filter: blur(0.3em);
 }
 
 .topnav {
@@ -144,6 +146,10 @@ a {
   
   font-family: 'Poppins',sans-serif;
   background-color: var(--primary);
+}
+.descarga:hover {
+  color:white;
+  background-color: rgb(78, 92, 107); /* Add a dark-grey background on hover */
 }
 
 /*Principal*/
@@ -225,6 +231,10 @@ footer{
   border-radius: 30px;
   font-size: 20px;
 }
+.des:hover{
+  color:white;
+  background-color: rgb(78, 92, 107);
+}
 
 .download {
 display: flex;
@@ -289,6 +299,7 @@ justify-content: space-between;
 @media (min-width: 481px) and (max-width: 768px) {
   .topheader{
     backdrop-filter: none;
+    --webkit-backdrop-filter: none;
   }
   /* Menu */
   .menu {
@@ -369,6 +380,7 @@ justify-content: space-between;
 @media (max-width: 480px) {
   .topheader{
     backdrop-filter: none;
+    --webkit-backdrop-filter: none;
   }
   /* Menu */
   .menu {

@@ -176,18 +176,42 @@ a {
   padding-right: 30px;
 }
 
-.fondo{
-  background-color: white;
+.Formulario{
+  background-color: var(--bg-color);
   width: 100vw;
-  height: 200px;
+  height: auto;
+}
+.formularioc{
+  padding: 60px;
+}
+form{
+  display: grid;
+  justify-content: center;
 }
 
 /*Footer*/
 footer{
-  width: 100vw;
-  height: 500px;
+  width: 100%;
+  height: auto;
   background-color: var(--primary);
 }
+.contenido{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+}
+
+.footerC{
+  margin-right: 5%;
+  width: 45%;
+}
+.footerL{
+  width: 50%;
+}
+.footerL a{
+  display: block;
+}
+
 
 @media (min-width: 481px) and (max-width: 768px) {
   .topheader{
@@ -225,6 +249,7 @@ footer{
   }
   
   .descarga{
+    margin-top: 20px;
     background-color: white;
   }
 
@@ -248,6 +273,14 @@ footer{
   .open-menu:focus:not(:focus-visible),
   .close-menu:focus:not(:focus-visible) {
     outline: none;
+  }
+  .footerC{
+    margin-right: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .footerL{
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -284,6 +317,7 @@ footer{
   }
 
   .descarga{
+    margin-top: 20px;
     background-color: white;
   }
 
@@ -307,5 +341,13 @@ footer{
   .open-menu:focus:not(:focus-visible),
   .close-menu:focus:not(:focus-visible) {
     outline: none;
+  }
+  .footerC{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .footerL{
+    width: 100%;
   }
 }

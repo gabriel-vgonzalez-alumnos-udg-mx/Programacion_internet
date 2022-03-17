@@ -67,3 +67,17 @@
     position: relative;
     font-family: 'Poppins',sans-serif;
 }
+main{
+  display: flex;
+  margin-top: 80px;
+}
+.aside{
+  width: 25%;
+  height: 500px;
+  background-color: #121212;
+}
+.article{
+  width: 75%;
+  height: 500px;
+  background-color: #124f88;
+}

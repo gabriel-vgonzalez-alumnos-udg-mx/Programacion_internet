@@ -267,10 +267,9 @@ aside a{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
 }
-
 .btn-primary{
 background-color: #9a5833;
 }
@@ -319,6 +318,7 @@ padding: 13px;
 .dropdown-menu{
 background-color: #f9f9f9;
 width: 145px;
+border-radius: 10px;
 display: none;
 }
 
@@ -329,6 +329,11 @@ background-color: #f1f1f1;
 .dropdown:hover .dropdown-menu{
 display: block;
 }
+.dropdown{
+  position: absolute;
+}
+
+
 .coffeeFont{
   font-family: 'CoffeeAndTea','Poppins',sans-serif;
 }
@@ -353,4 +358,60 @@ h6.coffeeFont{
 
 .listas{
   padding-left: 20px;
+}
+/* Botones */
+.boton1{
+  border: none;
+  border-radius: 20px;
+  background-color: var(--secundary);
+  font-family: 'Poppins',sans-serif;
+  font-size: 15pt;
+  color: white;
+  padding: 2px 20px;
+}
+.boton2{
+  border: none;
+  border-radius: 20px;
+  background-color: var(--primary);
+  font-family: 'Poppins',sans-serif;
+  font-size: 15pt;
+  color: var(--text-color);
+  padding: 2px 20px;
+}
+.boton3{
+  border: none;
+  color: black;
+  border-radius: 20px;
+  background-color: var(--terciary);
+  font-family: 'Poppins',sans-serif;
+  font-size: 15pt;
+  padding: 2px 20px;
+}
+.boton4{
+  color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: var(--secundary);
+  font-family: 'Poppins',sans-serif;
+  font-size: 15pt;
+  padding: 2px 20px;
+}
+.boton5{
+  color: var(--text-color);
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: var(--primary);
+  font-family: 'Poppins',sans-serif;
+  font-size: 15pt;
+  padding: 2px 20px;
+}
+.boton6{
+  border: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: var(--terciary);
+  font-family: 'Poppins',sans-serif;
+  font-size: 15pt;
+  padding: 2px 20px;
 }

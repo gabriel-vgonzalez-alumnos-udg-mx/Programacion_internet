@@ -23,7 +23,7 @@
                     Coffee CSS
                 </div>
                 </a>
-                <button class="descargaDoc">Descargar</button>
+                <a href="/framework/Ejemplo.zip" download="Ejemplo.zip" class="descargaDoc">Descargar</a>
             </nav>
         </header>
         <!-- Boton ir hacia el inicio -->
@@ -81,6 +81,13 @@
                 <a href="#">Codigo</a>
                 <a href="#">Colores</a>
                 <a href="#">Tipografía</a>
+                <a href="#">Iconos</a>
+                <a href="#">Componentes</a>
+                <a href="#">Botones</a>
+                <a href="#">Menú desplegable</a>
+                <a href="#">Bóton volver al inicio</a>
+                <a href="#">Modales</a>
+                <a href="#">Formularios</a>
             </aside>
             <!--ARTICLE-->
             <article class="article">
@@ -93,7 +100,7 @@
                 <br>
 
                 <h2>Inicio rápido</h2>
-                <p id="Des" >
+                <p>
                     Si necesitas agregar rapidamente coffe css a tu proyecto solo incluye los paquetes a tu proyecto
                      y agrega la siguiente etiqueta en el head de tu archivo html.
                 </p>
@@ -118,8 +125,9 @@
                     Descarga Cofee CSS para obtener el código compilado de CSS & JavaScript, el cual deberas 
                     agregar a tu proyecto.
                 </p>
-                <input type="button" value="GitHub">
-                <input type="button" value="Download">
+                <br>
+                <input type="button" value="GitHub" id="gitBtn" onclick="location.href='https://github.com/gabriel-vgonzalez-alumnos-udg-mx/Programacion_internet.git'">
+                <a href="/framework/Ejemplo.zip" id="descargaBtn" download="Ejemplo.zip">Descarga</a>
                 
                 
                 <h2> <br> Colores</h2>
@@ -215,14 +223,16 @@
                     </div>
                     <br>
                     <p style="margin-top: 50px;color: var(--accentcolor);">&lt;div class="dropdown"&gt;<br>
-                        &lt;button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"&gt;
+                        &nbsp &lt;button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"&gt;
                         Dropdown button
                         &lt;/button&gt;<br>
-                        &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"&gt;     <br>                               
-                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Accio&lt;/a&gt;&lt;/li&gt;<br>
-                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Alguna accion&lt;/a&gt;&lt;/li&gt;<br>
-                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Otra accion&lt;/a&gt;&lt;/li&gt;<br>
-                        &lt;/ul&gt;</p>
+                        &nbsp &nbsp&lt;ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"&gt;     <br>                               
+                        &nbsp&nbsp&nbsp&nbsp&lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Accio&lt;/a&gt;&lt;/li&gt;<br>
+                        &nbsp&nbsp&nbsp&nbsp&lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Alguna accion&lt;/a&gt;&lt;/li&gt;<br>
+                        &nbsp&nbsp&nbsp&nbsp&lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Otra accion&lt;/a&gt;&lt;/li&gt;<br>
+                        &nbsp&nbsp&lt;/ul&gt;<br>
+                        &lt;/div&gt;
+                    </p>
                     <br>
                     <h3>Bóton volver al inicio</h5>
                     <p>Con pocas lineas de codigo podras implementar un boton para volver al inicio de la pagina como el ejemplo siguiente</p>

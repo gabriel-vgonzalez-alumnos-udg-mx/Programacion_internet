@@ -263,7 +263,7 @@ footer{
   height: auto;
   background-color: var(--bg-color);
   padding: 40px;
-  font-size: 20pt;
+  font-size: 16pt;
 }
 aside a{
   display: block;
@@ -510,4 +510,23 @@ h6.coffeeFont{
   position: absolute;
   left: 44%;
   top: 60px;
+}
+
+#descargaBtn{
+  background-color: var(--accentcolor);
+  color:var(--text-color-inverse);
+  border: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+}
+#gitBtn{
+  background-color: var(--accentcolor);
+  color:var(--text-color-inverse);
+  border: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
 }

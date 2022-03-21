@@ -374,14 +374,15 @@ justify-content: space-between;
     padding: 0;
   }
 
-  .menu a {
+  .links {
     color: var(--colort);
     line-height: 60px;
   }
   
   .descarga{
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: white;
+    color: black;
   }
 
   .open-menu,
@@ -454,14 +455,15 @@ justify-content: space-between;
     padding: 0;
   }
 
-  .menu a {
+  .links {
     color: var(--colort);
     line-height: 60px;
   }
 
   .descarga{
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: white;
+    color: black;
   }
 
   .open-menu,

@@ -2,10 +2,9 @@
 const setTheme = theme => document.documentElement.className = theme;
 const setTheme2 = theme => document.documentElement.className = theme;
 
-//Get the button:
+// Botor ir al inicio de la pagina
 mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -15,11 +14,9 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0; 
 }
 
 // Modal Exito
@@ -48,9 +45,10 @@ function mostrar2(){
   modAlerta2.classList.remove("oculto");
 }
 
+// Animacion con anime.js
 var special = anime({
   targets: document.getElementById('special'),
-  translateX: 200,
+  translateX: 100,
   autoplay: false
 });
 

@@ -66,6 +66,7 @@ a {
   left: 0;
   top: 0;
   width: 100%;
+  z-index: 100;
   background-color: var(--bg-color);
   --webkit-backdrop-filter: blur(0.3em);
 }
@@ -616,6 +617,7 @@ h6.coffeeFont{
   width: 100px;
   height: 100px;
   background: #9e6730;
+  z-index: 0;
   position: relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;

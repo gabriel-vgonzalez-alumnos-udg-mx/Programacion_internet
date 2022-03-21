@@ -592,7 +592,7 @@ h6.coffeeFont{
   width: 100px;
   height: 100px;
   animation: infinite mover 2s ease;
-  background: black;
+  background: var(--accentcolor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -649,4 +649,9 @@ h6.coffeeFont{
 .tarjeta-wrap:hover .tarjeta{
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+}
+.anime{
+  width: 100px;
+  height: 100px;
+  background-color: var(--accentcolor);
 }

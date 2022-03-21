@@ -47,3 +47,11 @@ function ocultar2(){
 function mostrar2(){
   modAlerta2.classList.remove("oculto");
 }
+
+var special = anime({
+  targets: document.getElementById('special'),
+  translateX: 200,
+  autoplay: false
+});
+
+document.querySelector('.anime').onclick = special.restart;

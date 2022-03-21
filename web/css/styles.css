@@ -109,7 +109,7 @@ a {
   padding: 0 15px;
 }
 
-.menu a {
+.links {
   color: var(--colort);
   font-size: 18px;
   font-weight: 500;
@@ -117,17 +117,6 @@ a {
 
   position: relative;
 }
-.menu button {
-  color: var(--text-color);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 50px;
-  border: none;
-  border-radius: 30px;
-  padding: 0 20px;
-  position: relative;
-}
-
 
 .open-menu,
 .close-menu {
@@ -143,7 +132,14 @@ a {
 }
 
 .descarga{
-  
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  position: relative;
   font-family: 'Poppins',sans-serif;
   background-color: var(--primary);
 }

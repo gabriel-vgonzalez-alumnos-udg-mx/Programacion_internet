@@ -511,3 +511,22 @@ h6.coffeeFont{
   left: 44%;
   top: 60px;
 }
+
+#descargaBtn{
+  background-color: var(--secundary);
+  color:var(--text-color-inverse);
+  border: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+}
+#gitBtn{
+  background-color: var(--secundary);
+  color:var(--text-color-inverse);
+  border: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+}

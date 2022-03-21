@@ -18,8 +18,6 @@
   --terciary:#f3dbc3;
   --accentcolor:#804000;
   --colort:#fff;
-
-
   --theme-color: white;
   --text-color-inverse: white;
   --text-color: black;
@@ -32,26 +30,22 @@
   --terciary:#eaccad;
   --accentcolor:#f3dbce;
   --colort:#fff;
-
-
   --theme-color: white;
   --text-color-inverse: black;
   --text-color: white;
 }
 
+/* Universales */
 *{
   margin: 0;
   padding: 0;
 }
 
+
 html{
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-  color: var(--text-color);
-}
 /*Body*/
 .bodyDoc {
   font-family: 'Poppins', sans-serif;
@@ -61,11 +55,16 @@ a {
 }
 
 /*Header*/
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
 .topheaderDoc {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
+  z-index: 100;
   background-color: var(--bg-color);
   --webkit-backdrop-filter: blur(0.3em);
 }
@@ -205,59 +204,7 @@ footer{
   background-color: #555; 
 }
 
-
-@media (min-width: 481px) and (max-width: 768px) {
-  footer{
-    width: 100vw;
-  }
-  .footerC{
-    margin-right: 0px;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  .footerL{
-    width: 100%;
-  }
-  .downloadC{
-    width: 100%;
-  }
-  .samples{
-    width: 100%;
-  }
-}
-@media (max-width: 480px) {
-  .footerC{
-    width: 100%;
-    margin-right: 0px;
-    margin-bottom: 10px;
-  }
-  .footerL{
-    width: 100%;
-  }
-  .downloadC{
-    width: 100%;
-  }
-  .samples{
-    width: 100%;
-  }
-  aside{
-    display: none;
-  }
-  p#ligaGF{
-    display: none;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
+/* Main componentes */
 .aside{
   width: 25%;
   height: auto;
@@ -275,13 +222,7 @@ aside a{
   padding: 40px;
 }
 
-
-
-
-
-
-
-
+/* Botones */
 .btn {
   border: #eaccad;
   color: white;
@@ -327,6 +268,7 @@ color: white;
 
 }
 
+/* Dropdown */
 .dropdown .dropdown-menu .dropdown-item{
 text-decoration: none;
 color: #121212;
@@ -352,11 +294,12 @@ background-color: #f1f1f1;
 .dropdown:hover .dropdown-menu{
 display: block;
 }
+
 .dropdown{
   position: absolute;
 }
 
-
+/* Titulos de ejemplo */
 .coffeeFont{
   font-family: 'CoffeeAndTea','Poppins',sans-serif;
 }
@@ -382,7 +325,7 @@ h6.coffeeFont{
 .listas{
   padding-left: 20px;
 }
-/* Botones */
+/* Botones ejemplos */
 .boton1{
   border: none;
   border-radius: 20px;
@@ -444,6 +387,60 @@ h6.coffeeFont{
   padding: 2px 20px;
   margin-top: 10px;
 }
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  footer{
+    width: 100vw;
+  }
+  .footerC{
+    margin-right: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .footerL{
+    width: 100%;
+  }
+  .downloadC{
+    width: 100%;
+  }
+  .samples{
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .footerC{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .footerL{
+    width: 100%;
+  }
+  .downloadC{
+    width: 100%;
+  }
+  .samples{
+    width: 100%;
+  }
+  aside{
+    display: none;
+  }
+  p#ligaGF{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -535,6 +532,7 @@ h6.coffeeFont{
   padding: 6px 20px;
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
+  width: auto;
 }
 
 .botones{
@@ -546,11 +544,7 @@ h6.coffeeFont{
 
 
 
-
-
-
-
-
+/* Animaciones css */
 .cuadrado {
   width: 100px;
   height: 100px;
@@ -592,7 +586,7 @@ h6.coffeeFont{
   width: 100px;
   height: 100px;
   animation: infinite mover 2s ease;
-  background: black;
+  background: var(--accentcolor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -616,6 +610,7 @@ h6.coffeeFont{
   width: 100px;
   height: 100px;
   background: #9e6730;
+  z-index: 0;
   position: relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -649,4 +644,92 @@ h6.coffeeFont{
 .tarjeta-wrap:hover .tarjeta{
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+}
+/* Anime.js */
+.anime{
+  width: 100px;
+  height: 100px;
+  background-color: var(--accentcolor);
+}
+
+
+
+
+
+
+.error{
+  background-color: rgb(185, 0, 0);
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+.correcto{
+  background-color: rgb(74, 185, 0);
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+/* Formularios */
+.formulario1{
+  display: flex;
+  padding: 20px;
+  color: var(--text-color);
+  font-family: 'Poppins',sans-serif;
+  width: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.formulario1 input{
+  margin: 5px;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Poppins',sans-serif;
+  padding: 3px 10px;
+}
+input{
+  background-color: white;
+  width: 100%;
+}
+input:invalid{
+  background-color: rgb(255, 193, 193);
+}
+.submit{
+  background-color: var(--primary);
+  color: var(--text-color);
+  width: 40%;
+}
+.reiniciar{
+  background-color: var(--primary);
+  color: var(--text-color);
+  width: 40%;
+}
+.formulario1 button{
+  font-family: 'Poppins',sans-serif;
+}
+.formulario1 select{
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--text-color);
+  padding: 2px 5px;
+}
+.gen{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.gen input{
+  width: auto;
 }

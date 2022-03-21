@@ -293,8 +293,33 @@
                     </details>
                     <br>
                     <h3>Formularios</h3>
-                    <p></p>
-                    <br><br>
+                    <p>Contamos con una base para los formularios que incluye validacion html y JavaScript.</p>
+                    <br>
+                    <form class="formulario1">
+                        <input type="text" id="nombre" placeholder="Nombre" required>
+                        <input type="email" name="" id="email" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Email">
+                        <input type="tel" id="tel" placeholder="Teléfono" required>
+                        <p>País: 
+                            <select name="paises" id="paises">
+                                <option value="value1">México</option>
+                                <option value="value2" selected>Canadá</option>
+                                <option value="value3">Estados Unidos</option>
+                              </select>
+                        </p><br>
+                        <div class="gen">
+                            Genero: <br> 
+                            <label for=""><input type="radio" class="radiobutton" name="genero" value="Femenino"> Femenino</label>
+                            <label for=""><input type="radio" name="genero" value="NoBinario" > No binario </label>
+                            
+                            <input type="radio" name="genero" value="mediodia"> Masculino
+                            
+                        </div>
+                        
+                    
+                        <input type="reset" value="Reiniciar" class="reiniciar">
+                        <input type="submit" value="Enviar" class="submit">
+                    </form>
+                    <br>
 
                     <h2>Animaciones</h2>
                     <br>

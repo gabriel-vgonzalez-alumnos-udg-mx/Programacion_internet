@@ -53,3 +53,107 @@ var special = anime({
 });
 
 document.querySelector('.anime').onclick = special.restart;
+
+
+// const btnEnviar = document.querySelector('#submit');
+// btnEnviar.addEventListener('click', function(evento){
+//   console.log(evento);
+//   evento.preventDefault();
+
+//   //validar un formulario
+//   console.log('Enviando formulario...');
+// });
+
+
+//Eventos de los imputs y text area
+
+const datos = {
+  nombre: '',
+  email: '',
+  telefono: ''
+}
+
+const nombre = document.querySelector('#nombre');
+const email = document.querySelector('#email');
+const telefono = document.querySelector('#tel')
+const formulario = document.querySelector('.formulario1');
+
+nombre.addEventListener('input', leerTexto);
+email.addEventListener('input', leerTexto);
+telefono.addEventListener('input', leerTexto);
+
+
+//Event de sumbit
+
+formulario.addEventListener('sumbit', function(evento){
+  evento.preventDefault();
+  //Validar el formulario
+
+  const{ nombre , email, telefono} = datos;
+
+  if(nombre === '' || email === '' || telefono === ''){
+    mostrarAlerta('Todos los campos son obligatorios', 'error');
+    return; //corta la ejecucion del código
+  }
+
+  //Crear la laerta de enviado correctamente
+  mostrarAlerta(' El formulario ha sido enviado')
+});
+
+
+function leerTexto(e){
+  //console.log(e.target.value);
+  datos[e.target.id] = e.target.value;
+  //console.log(datos);
+}
+
+function mostrarAlerta(mensaje, error = null){
+  const alerta = dcument.createElement('p');
+  alerta.textContent = mensaje;
+
+  if(error){
+    alerta.classList.add('error');
+  }else{
+    alerta.classList.add('correcto');
+  }
+
+  formulario.appendChild(alerta);
+  //Desaparezca despues de 5s
+  setTimeout(() => {
+    error.remove();
+  }, 5000);
+}
+
+//Validar el radio
+
+function comprobar() {
+       var pulsado = false;//variable de comprobación
+       var opciones = document.formulario1.genero; //array de elementos
+       var elegido = -1; //número del elemento elegido en el array
+       for (i=0;i<opciones.length;i++) { //bucle de comprobación
+             if (opciones[i].checked == true) {
+             pulsado = true 
+             elegido = i //número del elemento elegido en el array
+             }
+           }
+       if (pulsado == true) { //mensaje de formulario válido
+          miOpcion = opciones[elegido].value
+          mostrarAlerta('El formulario ha sido enviado')
+          }
+       else { //mensaje de formulario no válido.
+          mostrarAlerta('Todos los campos son obligatorios', 'error');
+          return false //el formulario no se envía.
+          }
+       }
+
+//validar el select
+function elige() {
+  var lista = document.getElementById("paises")
+  if (lista.selectedIndex == null || lista.selectedIndex == 0) { 
+      mostrarAlerta('Todos los campos son obligatorios', 'error');
+      return false
+      }
+  else { 
+      mostrarAlerta('El formulario ha sido enviado')
+      }		
+}

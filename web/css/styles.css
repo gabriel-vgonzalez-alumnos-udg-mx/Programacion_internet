@@ -187,6 +187,57 @@ form{
   justify-content: center;
 }
 
+/* Modal */
+.alert{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  /* background-color: var(--clear); */
+  /* opacity: .4; */
+}
+.oculto{
+  display: none;
+}
+.alert .alertBox{
+  width: 30vw;
+  height: 30vh;
+  position: relative;
+  top: 35vh;
+  left: 35vw;
+
+  background-color: var(--bg-color);
+  border-radius: 20px;
+}
+.alert #alertClose{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  color: var(--accentcolor);
+  font-size: 15px;
+}
+.alert #alertClose:hover{
+  cursor: pointer;
+}
+.alert #alertContent{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#check{
+  color: green;
+  position: absolute;
+  left: 44%;
+  top: 60px;
+}
+
 /*Footer*/
 footer{
   width: 100%;
@@ -490,4 +541,28 @@ justify-content: space-between;
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+textarea{
+  border-radius: 15px;
+  height: 200px;
+  background-color: var(--bg-color);
+  border-color: var(--text-color);
+  resize: vertical;
+}
+.enviar{
+  border: none;
+  border-radius: 20px;
+  color: var(--text-color);
+  padding: 5px 5px;
+  font-family: 'Poppins',sans-serif;
+  background-color: var(--primary);
+  font-size: 12pt;
+}
+
+
+
+
+
+
+
 

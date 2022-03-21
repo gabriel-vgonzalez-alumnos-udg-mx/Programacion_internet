@@ -187,9 +187,29 @@ footer{
 #myBtn:hover {
   background-color: #555; 
 }
+#myBtn2 {
+  bottom: 20px; 
+  right: 30px; 
+  border: none; 
+  outline: none; 
+  background-color: var(--accentcolor);
+  color: var(--text-color-inverse);
+  cursor: pointer; 
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 18px;
+  width: 48px;
+}
+
+#myBtn2:hover {
+  background-color: #555; 
+}
 
 
 @media (min-width: 481px) and (max-width: 768px) {
+  footer{
+    width: 100vw;
+  }
   .footerC{
     margin-right: 0px;
     margin-bottom: 10px;
@@ -221,6 +241,9 @@ footer{
     width: 100%;
   }
   aside{
+    display: none;
+  }
+  p#ligaGF{
     display: none;
   }
 }
@@ -414,4 +437,77 @@ h6.coffeeFont{
   font-family: 'Poppins',sans-serif;
   font-size: 15pt;
   padding: 2px 20px;
+}
+
+
+
+
+
+/* Modal */
+.alert{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  /* background-color: var(--clear); */
+  /* opacity: .4; */
+}
+.oculto{
+  display: none;
+}
+.alert .alertBox{
+  width: 30vw;
+  height: 30vh;
+  position: relative;
+  top: 35vh;
+  left: 35vw;
+
+  background-color: var(--bg-color);
+  border-radius: 20px;
+}
+.alert #alertClose{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  color: var(--accentcolor);
+  font-size: 15px;
+}
+.alert #alertClose:hover{
+  cursor: pointer;
+}
+.alert #alertContent{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#check{
+  color: green;
+  position: absolute;
+  left: 44%;
+  top: 60px;
+}
+
+.alert #alertClose2{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  color: var(--accentcolor);
+  font-size: 15px;
+}
+.alert #alertClose2:hover{
+  cursor: pointer;
+}
+#err{
+  color: rgb(175, 0, 0);
+  position: absolute;
+  left: 44%;
+  top: 60px;
 }

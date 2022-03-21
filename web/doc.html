@@ -26,10 +26,51 @@
                 <button class="descargaDoc">Descargar</button>
             </nav>
         </header>
-
+        <!-- Boton ir hacia el inicio -->
         <button onclick="topFunction()" id="myBtn" title="Go to top">
             <span class="material-icons">expand_less</span>
         </button>
+        <!-- Modales -->
+        <div class="alert oculto" id="modAlerta">
+            <div class="alertBox">
+                <div id="alertClose">
+                    <span class="material-icons">
+                        highlight_off
+                    </span>
+                </div>
+                <div id="check">
+                    <span class="material-icons" style="font-size: 50px;">
+                        check_circle_outline
+                    </span>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="alertContent">
+                    <p>Proceso Exitoso</p>
+                </div>
+            </div>
+        </div>
+        <div class="alert oculto" id="modAlerta2">
+            <div class="alertBox">
+                <div id="alertClose2">
+                    <span class="material-icons">
+                        highlight_off
+                    </span>
+                </div>
+                <div id="err">
+                    <span class="material-icons" style="font-size: 50px;">
+                        highlight_off
+                    </span>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="alertContent">
+                    <p>Error</p>
+                </div>
+            </div>
+        </div>
 
         <!--MAIN-->
         <main>
@@ -57,9 +98,9 @@
                      y agrega la siguiente etiqueta en el head de tu archivo html.
                 </p>
                 <br>
-                <p>&lt;link rel="stylesheet" href="css/styles.css"&gt;</p>
+                <p style="color: var(--accentcolor);">&lt;link rel="stylesheet" href="css/styles.css"&gt;</p>
                 <br>
-                <p>&lt;script src="js/scripts.js"&gt;&lt;/script&gt;</p>
+                <p style="color: var(--accentcolor);">&lt;script src="js/scripts.js"&gt;&lt;/script&gt;</p>
 
                 <h2><br>Código CSS y JavaScript</h2>
                 <p>
@@ -122,17 +163,17 @@
 
 
                 <h2>Iconos</h2>
-                <p>Utilizamos los iconos de Material Icons de Google para poder utilizarlos agrega la siguiente etiqueta: en el head</p>
+                <p>Utilizamos los iconos de Material Icons de Google para poder utilizarlos agrega la etiqueta de google fonts en el head.</p>
                 <br>
-                <p>&lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"&gt;</p>
+                <p style="color: var(--accentcolor);" id="ligaGF">&lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"&gt;</p>
                 <br>
                 <p>Y en el el texto coloca el siguiente codigo cambiando el texto por el del icono elegido</p>
                 <br>
-                <p>&lt;span class="material-icons"&gt;local_cafe&lt;/span&gt;</p>
+                <p style="color: var(--accentcolor);">&lt;span class="material-icons"&gt;local_cafe&lt;/span&gt;</p>
                 <br>
-                <p><span class="material-icons">local_cafe</span> local_cafe &nbsp; <span class="material-icons">coffee</span> coffee &nbsp; 
-                <span class="material-icons">free_breakfast</span> free_breakfast  &nbsp;<span class="material-icons">emoji_food_beverage</span>
-                emoji_food_beverage &nbsp; <span class="material-icons">coffee_maker</span> coffee_maker 
+                <p><span class="material-icons">local_cafe</span> local_cafe <br><span class="material-icons">coffee</span> coffee <br>
+                <span class="material-icons">free_breakfast</span> free_breakfast <br><span class="material-icons">emoji_food_beverage</span>
+                emoji_food_beverage <br><span class="material-icons">coffee_maker</span> coffee_maker 
                 </p>
 
                 <h2> <br> Componentes</h2>
@@ -140,9 +181,9 @@
                     <h3>Botones</h3>
                     <br>
                     <p>
-                        Utilice los estilos de botones personalizados de Coffe CSS para acciones en formularios, 
-                        cuadros de diálogo y mucho más.
+                        Utilice los estilos de botones personalizados de Coffe CSS con la clase boton1, boton2...
                     </p>
+                    <br>
                         <h4>Ejemplos:</h4>
                         <br>
                         
@@ -160,20 +201,79 @@
                         apareciendo de forma elegante.
                     </p>
                     <br>
-                    <h3>Bóton despegable</h5>
+                    <h4>Bóton despegable</h4>
                     <br>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown button
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">                                    
+                            <li><a class="dropdown-item" href="#">Accio</a></li>
+                            <li><a class="dropdown-item" href="#">Alguna accion</a></li>
+                            <li><a class="dropdown-item" href="#">Otra accion</a></li>
                         </ul>
                     </div>
                     <br>
+                    <p style="margin-top: 50px;color: var(--accentcolor);">&lt;div class="dropdown"&gt;<br>
+                        &lt;button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"&gt;
+                        Dropdown button
+                        &lt;/button&gt;<br>
+                        &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"&gt;     <br>                               
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Accio&lt;/a&gt;&lt;/li&gt;<br>
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Alguna accion&lt;/a&gt;&lt;/li&gt;<br>
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Otra accion&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;/ul&gt;</p>
+                    <br>
+                    <h3>Bóton volver al inicio</h5>
+                    <p>Con pocas lineas de codigo podras implementar un boton para volver al inicio de la pagina como el ejemplo siguiente</p>
+                    <br>
+                    <button onclick="topFunction()" id="myBtn2" title="Go to top">
+                        <span class="material-icons">
+                            expand_less
+                            </span>
+                    </button>
 
-                    <h3 style="margin-top: 50px;">Formularios</h3>
+                    <br>
+                    <br>
+                    <p style="color: var(--accentcolor);">&lt;button onclick="topFunction()" id="myBtn" title="Go to top"&gt;
+                        &lt;span class="material-icons"&gt;
+                            expand_less
+                            &lt;/span&gt;
+                    &lt;/button&gt;</p>
+                    <br>
+                    <h3>Modales</h3>
+                    <p>Contamos con dos modales que puedes aplicar a tu pagina para mostrarle al usuario el exito o fallo de una accion.
+                         Es muy facil de inplementar con solo la estructura que se presentara posteriormente sera suficiente.
+                    </p>
+                    <br>
+                    <button class="boton1" id="ejemploM">Ejemplo</button>
+                    <br>
+                    <br>
+                    <button class="boton1" id="ejemploM2">Ejemplo</button>
+                    <br>
+                    <br>
+                    <p style="color: var(--accentcolor);">&lt;div class="alert oculto" id="modAlerta"&gt; <br>
+                        &nbsp&lt;div class="alertBox"&gt; <br>
+                        &nbsp&nbsp&lt;div id="alertClose"&gt; <br>
+                        &nbsp&nbsp&nbsp&lt;span class="material-icons"&gt; <br>
+                        &nbsp&nbsp&nbsp&nbsp highlight_off <br>
+                        &nbsp&nbsp&nbsp&lt;/span&gt; <br>
+                        &nbsp&nbsp&lt;/div&gt;<br>
+                        &nbsp&lt;div id="check"&gt;<br>
+                        &nbsp&nbsp&nbsp&lt;span class="material-icons" style="font-size: 50px;"&gt;<br>
+                        &nbsp&nbsp&nbsp&nbspheck_circle_outline <br>
+                        &nbsp&nbsp&nbsp&lt;/span&gt;<br>
+                        &nbsp&nbsp&lt;/div&gt;<br>
+                        &nbsp&nbsp&lt;br&gt;<br>
+                        &nbsp&nbsp&lt;br&gt;<br>
+                        &nbsp&nbsp&lt;br&gt;<br>
+                        &nbsp&nbsp&lt;div id="alertContent"&gt;<br>
+                        &nbsp&nbsp&nbsp&lt;p&gt;Proceso Exitoso&lt;/p&gt;<br>
+                        &nbsp&nbsp&lt;/div&gt;<br>
+                        &nbsp&lt;/div&gt;<br>
+                    &lt;/div&gt;</p>
+                    <br>
+                    <h3>Formularios</h3>
                     <p></p>
                 
             </article>

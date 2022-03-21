@@ -104,24 +104,43 @@
                     <p>Para utilizar nuestro framework es necesario importar en el documento html los estios y los scripts.</p>
                     <p>Ejemplo:</p>
                     <br>
-                    <p>&lt;link rel="stylesheet" href="/styles.css" /
+                    <p style="color: #804000">&lt;link rel="stylesheet" href="/styles.css" /
                         &gt;</p>
 
-                    <p>&lt;script src="/web/js/scripts.js"&gt;&lt;/script&gt;</p>
+                    <p style="color: #804000"">&lt;script src="/web/js/scripts.js"&gt;&lt;/script&gt;</p>
 
                 </div>
             </div>
         </section>
 
-
+        <div class="alert oculto" id="modAlerta">
+            <div class="alertBox">
+                <div id="alertClose">
+                    <span class="material-icons">
+                        highlight_off
+                    </span>
+                </div>
+                <div id="check">
+                    <span class="material-icons" style="font-size: 50px;">
+                        check_circle_outline
+                    </span>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="alertContent">
+                    <p>Proceso Exitoso</p>
+                </div>
+            </div>
+        </div>
         
 
         <section class="Formulario">
             <div class="formularioc">
-                <form action="">
+                <form>
                     <textarea name="" id="" cols="100" rows="10"></textarea>
                     <br>
-                    <input type="submit" value="Enviar">
+                    <button type="button" class="enviar" id="enviar" onclick="mostrar()">Enviar</button>
                 </form>
             </div>
         </section>

@@ -391,6 +391,7 @@ h6.coffeeFont{
   font-size: 15pt;
   color: white;
   padding: 2px 20px;
+  margin-top: 10px;
 }
 .boton2{
   border: none;
@@ -400,6 +401,7 @@ h6.coffeeFont{
   font-size: 15pt;
   color: var(--text-color);
   padding: 2px 20px;
+  margin-top: 10px;
 }
 .boton3{
   border: none;
@@ -409,6 +411,7 @@ h6.coffeeFont{
   font-family: 'Poppins',sans-serif;
   font-size: 15pt;
   padding: 2px 20px;
+  margin-top: 10px;
 }
 .boton4{
   color: white;
@@ -418,6 +421,7 @@ h6.coffeeFont{
   font-family: 'Poppins',sans-serif;
   font-size: 15pt;
   padding: 2px 20px;
+  margin-top: 10px;
 }
 .boton5{
   color: var(--text-color);
@@ -427,6 +431,7 @@ h6.coffeeFont{
   font-family: 'Poppins',sans-serif;
   font-size: 15pt;
   padding: 2px 20px;
+  margin-top: 10px;
 }
 .boton6{
   border: none;
@@ -437,6 +442,7 @@ h6.coffeeFont{
   font-family: 'Poppins',sans-serif;
   font-size: 15pt;
   padding: 2px 20px;
+  margin-top: 10px;
 }
 
 
@@ -529,4 +535,118 @@ h6.coffeeFont{
   padding: 6px 20px;
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
+}
+
+.botones{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background: #9e6730;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+.cuadrado:hover{
+  transform: scale(2);
+}
+
+.Color{
+  width: 100px;
+  height: 100px;
+  background: var(--base);
+  animation:  cambiaColor 5s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+@keyframes cambiaColor{
+  10%{ background: #fff; }
+  30%{ background: #f3dbc3; }
+  50%{ background: #e8c39e; }
+  60%{ background: #9e6730; }
+  80%{ background: #804000; }
+  90% { background: black;  }
+}
+
+.ctn-ejemploMover{
+  position: relative;
+}
+ .ejemploMover{
+  width: 100px;
+  height: 100px;
+  animation: infinite mover 2s ease;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  right: 0;
+
+}
+@keyframes mover{
+  from{
+    left: 0;
+
+  }
+  to{
+    left: 50%;
+  }
+  
+}
+
+.tarjeta{
+  width: 100px;
+  height: 100px;
+  background: #9e6730;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+.adelante, .atras{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.adelante{
+  width: 100%;
+}
+.atras{
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: "open sans";
+    background: var(--text);
+}
+.tarjeta-wrap:hover .tarjeta{
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
